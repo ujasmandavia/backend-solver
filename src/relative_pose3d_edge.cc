@@ -4,7 +4,7 @@ namespace SLAMSolver{
 
 RelativePose3DEdge::RelativePose3DEdge(const Sophus::SE3 pose0_SE3_pose1) : pose0_SE3_pose1_(pose0_SE3_pose1) {}
 
-void RelativePose3DEdge::compute_error(){
+void RelativePose3DEdge::compute_errors(){
   Sophus::SE3 frame_SE3_pose0 = get_vertex<0>->parameters();
   Sophus::SE3 frame_SE3_pose1 = get_vertex<1>->parameters();
   error_ = (pose0_SE3_pose1_.inverse() * frame_SE3_pose0.inverse() * frame_SE3_pose1).log();

@@ -1,0 +1,6 @@
+#add_executable(curve_fitting curve_fitting.cc)
+#target_link_libraries(curve_fitting SLAMSolver)
+add_executable(sparse_bundle_adjustment_test sparse_bundle_adjustment.cc)
+target_link_libraries(sparse_bundle_adjustment_test SLAMSolver)
+#add_executable(pose_graph_optimization_test pose_graph_optimization.cc)
+#target_link_libraries(pose_graph_optimization_test SLAMSolver)

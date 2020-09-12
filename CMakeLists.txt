@@ -44,4 +44,4 @@ add_library(SLAMSolver SHARED
             src/reprojection_edge.cc
             include/reprojection_edge.hh
             )
-                                                                                                                                                  sparse_sadd_subdirectory(app)
+                                                                                                                                                  sparse_add_subdirectory(app)
